@@ -2,7 +2,8 @@ package ports
 
 import (
 	"context"
-	"github.com/titikterang/hexagonal-arch-boilerplate/internal/wallet/core/models"
+
+	"github.com/titikterang/hexagonal-arch-boilerplate/internal/wallet/models"
 )
 
 // WalletServiceAdapter - port primary

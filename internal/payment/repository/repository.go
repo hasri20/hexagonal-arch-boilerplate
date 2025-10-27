@@ -3,9 +3,10 @@ package repository
 import (
 	"context"
 	"encoding/json"
-	"github.com/titikterang/hexagonal-arch-boilerplate/internal/payment/core/models"
 	"net/http"
 	"strings"
+
+	"github.com/titikterang/hexagonal-arch-boilerplate/internal/payment/models"
 )
 
 func (r *PaymentRepository) ReadBalanceInfoFromWallet(ctx context.Context, userID string) (float64, error) {

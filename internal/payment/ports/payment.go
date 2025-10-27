@@ -2,7 +2,8 @@ package ports
 
 import (
 	"context"
-	"github.com/titikterang/hexagonal-arch-boilerplate/internal/payment/core/models"
+
+	"github.com/titikterang/hexagonal-arch-boilerplate/internal/payment/models"
 )
 
 // PaymentServiceAdapter - port primary

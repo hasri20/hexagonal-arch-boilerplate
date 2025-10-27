@@ -1,7 +1,7 @@
 package services
 
 import (
-	"github.com/titikterang/hexagonal-arch-boilerplate/internal/payment/core/ports"
+	"github.com/titikterang/hexagonal-arch-boilerplate/internal/payment/ports"
 	"github.com/titikterang/hexagonal-arch-boilerplate/lib/config"
 )
 

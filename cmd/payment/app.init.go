@@ -2,10 +2,11 @@ package main
 
 import (
 	"fmt"
+
 	"github.com/spf13/viper"
-	"github.com/titikterang/hexagonal-arch-boilerplate/internal/payment/adapter/handler"
-	"github.com/titikterang/hexagonal-arch-boilerplate/internal/payment/adapter/repository"
-	"github.com/titikterang/hexagonal-arch-boilerplate/internal/payment/core/services"
+	"github.com/titikterang/hexagonal-arch-boilerplate/internal/payment/handler"
+	"github.com/titikterang/hexagonal-arch-boilerplate/internal/payment/repository"
+	"github.com/titikterang/hexagonal-arch-boilerplate/internal/payment/services"
 	"github.com/titikterang/hexagonal-arch-boilerplate/lib/config"
 )
 

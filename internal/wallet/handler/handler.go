@@ -2,7 +2,8 @@ package handler
 
 import (
 	"context"
-	"github.com/titikterang/hexagonal-arch-boilerplate/internal/wallet/core/models"
+
+	"github.com/titikterang/hexagonal-arch-boilerplate/internal/wallet/models"
 	"github.com/titikterang/hexagonal-arch-boilerplate/lib/protos/v1/wallet"
 )
 

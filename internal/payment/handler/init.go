@@ -1,7 +1,7 @@
 package handler
 
 import (
-	"github.com/titikterang/hexagonal-arch-boilerplate/internal/payment/core/ports"
+	"github.com/titikterang/hexagonal-arch-boilerplate/internal/payment/ports"
 	"github.com/titikterang/hexagonal-arch-boilerplate/lib/config"
 	pbHandler "github.com/titikterang/hexagonal-arch-boilerplate/lib/protos/v1/payment"
 )

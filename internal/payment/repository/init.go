@@ -1,10 +1,11 @@
 package repository
 
 import (
-	"github.com/titikterang/hexagonal-arch-boilerplate/internal/payment/core/ports"
-	"github.com/titikterang/hexagonal-arch-boilerplate/lib/config"
 	"net/http"
 	"time"
+
+	"github.com/titikterang/hexagonal-arch-boilerplate/internal/payment/ports"
+	"github.com/titikterang/hexagonal-arch-boilerplate/lib/config"
 )
 
 type PaymentRepository struct {

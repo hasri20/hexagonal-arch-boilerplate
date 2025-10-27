@@ -2,7 +2,8 @@ package handler
 
 import (
 	"context"
-	"github.com/titikterang/hexagonal-arch-boilerplate/internal/payment/core/models"
+
+	"github.com/titikterang/hexagonal-arch-boilerplate/internal/payment/models"
 	"github.com/titikterang/hexagonal-arch-boilerplate/lib/protos/v1/payment"
 )
 

@@ -2,9 +2,10 @@ package services
 
 import (
 	"context"
-	"github.com/go-kratos/kratos/v2/log"
-	"github.com/titikterang/hexagonal-arch-boilerplate/internal/wallet/core/models"
 	"strconv"
+
+	"github.com/go-kratos/kratos/v2/log"
+	"github.com/titikterang/hexagonal-arch-boilerplate/internal/wallet/models"
 )
 
 // GetUserBalance - primary adapter

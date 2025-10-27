@@ -2,11 +2,12 @@ package main
 
 import (
 	"fmt"
+
 	"github.com/go-redis/redis/v8"
 	"github.com/spf13/viper"
-	"github.com/titikterang/hexagonal-arch-boilerplate/internal/wallet/adapter/handler"
-	"github.com/titikterang/hexagonal-arch-boilerplate/internal/wallet/adapter/repository"
-	"github.com/titikterang/hexagonal-arch-boilerplate/internal/wallet/core/services"
+	"github.com/titikterang/hexagonal-arch-boilerplate/internal/wallet/handler"
+	"github.com/titikterang/hexagonal-arch-boilerplate/internal/wallet/repository"
+	"github.com/titikterang/hexagonal-arch-boilerplate/internal/wallet/services"
 	"github.com/titikterang/hexagonal-arch-boilerplate/lib/config"
 )
 
