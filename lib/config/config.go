@@ -9,8 +9,9 @@ type Config struct {
 }
 
 type AppConfig struct {
-	Address string `json:"address" mapstructure:"address"`
-	Label   string `json:"label" mapstructure:"label"`
+	GRPCAddress string `json:"grpc_address" mapstructure:"grpc_address"`
+	HTTPAddress string `json:"http_address" mapstructure:"http_address"`
+	Label       string `json:"label" mapstructure:"label"`
 }
 
 type HttpConfig struct {

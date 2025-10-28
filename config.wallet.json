@@ -1,6 +1,7 @@
 {
   "app": {
-    "address": "0.0.0.0:3002",
+    "grpc_address": "0.0.0.0:3002",
+    "http_address": "0.0.0.0:8002",
     "label": "wallet"
   },
   "http": {

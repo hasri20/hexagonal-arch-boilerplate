@@ -29,12 +29,13 @@ func initConfig(configName string) (*config.Config, error) {
 
 func initHandler(cfg *config.Config, redisClient *redis.Client) (*handler.Handler, error) {
 	repo := repository.NewRepository(cfg, redisClient)
-	hdl, err := handler.NewHandler(cfg, services.NewService(cfg, repo))
+	service := services.NewService(cfg, repo)
+	handler, err := handler.NewHandler(cfg, service)
 	if err != nil {
 		return nil, err
 	}
 
-	return hdl, nil
+	return handler, nil
 }
 
 func InitRedis(cfg *config.Config) *redis.Client {
