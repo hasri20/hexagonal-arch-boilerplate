@@ -7,9 +7,9 @@ import (
 	"github.com/go-kratos/kratos/v2/middleware/recovery"
 	grpc "github.com/go-kratos/kratos/v2/transport/grpc"
 
-	"github.com/titikterang/hexagonal-arch-boilerplate/internal/payment/ports"
-	"github.com/titikterang/hexagonal-arch-boilerplate/lib/config"
-	"github.com/titikterang/hexagonal-arch-boilerplate/lib/protos/v1/wallet"
+	"github.com/hasri20/hexagonal-arch-boilerplate/internal/payment/ports"
+	"github.com/hasri20/hexagonal-arch-boilerplate/lib/config"
+	"github.com/hasri20/hexagonal-arch-boilerplate/lib/protos/v1/wallet"
 )
 
 type PaymentRepository struct {

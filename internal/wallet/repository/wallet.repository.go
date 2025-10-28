@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/go-kratos/kratos/v2/log"
-	"github.com/titikterang/hexagonal-arch-boilerplate/internal/wallet/models"
+	"github.com/hasri20/hexagonal-arch-boilerplate/internal/wallet/models"
 )
 
 func (s *WalletRepository) ReadBalanceInfoFromDatastore(ctx context.Context, userID string) (models.DatastoreBalanceResponse, error) {

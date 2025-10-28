@@ -5,7 +5,7 @@ import (
 	"strconv"
 
 	"github.com/go-kratos/kratos/v2/log"
-	"github.com/titikterang/hexagonal-arch-boilerplate/internal/wallet/models"
+	"github.com/hasri20/hexagonal-arch-boilerplate/internal/wallet/models"
 )
 
 // GetUserBalance - primary adapter

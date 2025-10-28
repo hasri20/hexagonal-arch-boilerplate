@@ -8,8 +8,8 @@ import (
 	grpc "github.com/go-kratos/kratos/v2/transport/grpc"
 	http "github.com/go-kratos/kratos/v2/transport/http"
 	"github.com/gorilla/handlers"
-	"github.com/titikterang/hexagonal-arch-boilerplate/lib/config"
-	payment "github.com/titikterang/hexagonal-arch-boilerplate/lib/protos/v1/payment"
+	"github.com/hasri20/hexagonal-arch-boilerplate/lib/config"
+	payment "github.com/hasri20/hexagonal-arch-boilerplate/lib/protos/v1/payment"
 )
 
 func startService(cfg *config.Config) {

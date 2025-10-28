@@ -3,7 +3,7 @@ package services
 import (
 	"context"
 
-	"github.com/titikterang/hexagonal-arch-boilerplate/internal/payment/models"
+	"github.com/hasri20/hexagonal-arch-boilerplate/internal/payment/models"
 )
 
 func (s *PaymentService) TransferUserBalance(ctx context.Context, payload models.TransferBalancePayload) (float64, error) {

@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
+	"github.com/hasri20/hexagonal-arch-boilerplate/internal/payment/handler"
+	"github.com/hasri20/hexagonal-arch-boilerplate/internal/payment/repository"
+	"github.com/hasri20/hexagonal-arch-boilerplate/internal/payment/services"
+	"github.com/hasri20/hexagonal-arch-boilerplate/lib/config"
 	"github.com/spf13/viper"
-	"github.com/titikterang/hexagonal-arch-boilerplate/internal/payment/handler"
-	"github.com/titikterang/hexagonal-arch-boilerplate/internal/payment/repository"
-	"github.com/titikterang/hexagonal-arch-boilerplate/internal/payment/services"
-	"github.com/titikterang/hexagonal-arch-boilerplate/lib/config"
 )
 
 func initConfig(configName string) (*config.Config, error) {

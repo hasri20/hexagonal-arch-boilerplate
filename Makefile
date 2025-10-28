@@ -1,5 +1,5 @@
 #!/bin/bash
-export GOPRIVATE=github.com/titikterang
+export GOPRIVATE=github.com/hasri20
 
 API_PROTO_FILES=$(shell find lib/protos/$(MODULE) -name *.proto -not -path '*/vendor/*')
 API_PROTO_CLIENT=$(shell find lib/protos/openapiv2/lib/protos/$(MODULE) -name *.json -not -path '*/vendor/*' -not -path '*/config/*')

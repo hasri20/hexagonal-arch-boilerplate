@@ -3,8 +3,8 @@ package handler
 import (
 	"context"
 
-	"github.com/titikterang/hexagonal-arch-boilerplate/internal/wallet/models"
-	"github.com/titikterang/hexagonal-arch-boilerplate/lib/protos/v1/wallet"
+	"github.com/hasri20/hexagonal-arch-boilerplate/internal/wallet/models"
+	"github.com/hasri20/hexagonal-arch-boilerplate/lib/protos/v1/wallet"
 )
 
 func (h *Handler) GetUserBalance(ctx context.Context, in *wallet.GetBalanceRequest) (*wallet.GetBalanceResponse, error) {

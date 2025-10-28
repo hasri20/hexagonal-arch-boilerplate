@@ -1,4 +1,4 @@
-module github.com/titikterang/hexagonal-arch-boilerplate
+module github.com/hasri20/hexagonal-arch-boilerplate
 
 go 1.22.0
 

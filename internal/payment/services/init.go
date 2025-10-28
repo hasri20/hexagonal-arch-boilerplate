@@ -1,8 +1,8 @@
 package services
 
 import (
-	"github.com/titikterang/hexagonal-arch-boilerplate/internal/payment/ports"
-	"github.com/titikterang/hexagonal-arch-boilerplate/lib/config"
+	"github.com/hasri20/hexagonal-arch-boilerplate/internal/payment/ports"
+	"github.com/hasri20/hexagonal-arch-boilerplate/lib/config"
 )
 
 type PaymentService struct {

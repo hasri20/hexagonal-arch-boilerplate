@@ -3,8 +3,8 @@ package handler
 import (
 	"context"
 
-	"github.com/titikterang/hexagonal-arch-boilerplate/internal/payment/models"
-	"github.com/titikterang/hexagonal-arch-boilerplate/lib/protos/v1/payment"
+	"github.com/hasri20/hexagonal-arch-boilerplate/internal/payment/models"
+	"github.com/hasri20/hexagonal-arch-boilerplate/lib/protos/v1/payment"
 )
 
 func (h *Handler) TransferBalanceService(ctx context.Context, in *payment.TransferBalanceRequest) (*payment.TransferBalanceResponse, error) {

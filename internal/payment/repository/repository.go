@@ -4,7 +4,7 @@ import (
 	"context"
 	"log"
 
-	"github.com/titikterang/hexagonal-arch-boilerplate/lib/protos/v1/wallet"
+	"github.com/hasri20/hexagonal-arch-boilerplate/lib/protos/v1/wallet"
 )
 
 func (repository *PaymentRepository) ReadBalanceInfoFromWallet(ctx context.Context, userID string) (float64, error) {

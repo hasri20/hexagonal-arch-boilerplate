@@ -4,11 +4,11 @@ import (
 	"fmt"
 
 	"github.com/go-redis/redis/v8"
+	"github.com/hasri20/hexagonal-arch-boilerplate/internal/wallet/handler"
+	"github.com/hasri20/hexagonal-arch-boilerplate/internal/wallet/repository"
+	"github.com/hasri20/hexagonal-arch-boilerplate/internal/wallet/services"
+	"github.com/hasri20/hexagonal-arch-boilerplate/lib/config"
 	"github.com/spf13/viper"
-	"github.com/titikterang/hexagonal-arch-boilerplate/internal/wallet/handler"
-	"github.com/titikterang/hexagonal-arch-boilerplate/internal/wallet/repository"
-	"github.com/titikterang/hexagonal-arch-boilerplate/internal/wallet/services"
-	"github.com/titikterang/hexagonal-arch-boilerplate/lib/config"
 )
 
 func initConfig(configName string) (*config.Config, error) {
