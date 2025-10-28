@@ -151,9 +151,9 @@ const file_lib_protos_v1_payment_payment_proto_rawDesc = "" +
 	"\x16TransferBalanceService\x124.fastcampus.payment.public.v1.TransferBalanceRequest\x1a5.fastcampus.payment.public.v1.TransferBalanceResponse\"o\x92AM\n" +
 	"\apayment\x12\x1dTransfer Users Balance Amount*\x16TransferBalanceServiceJ\v\n" +
 	"\x03200\x12\x04\n" +
-	"\x02OK\x82\xd3\xe4\x93\x02\x19:\x01*\"\x14/v1/payment/transferB\xfc\x01\x92A\xa3\x01\x12z\n" +
+	"\x02OK\x82\xd3\xe4\x93\x02\x19:\x01*\"\x14/v1/payment/transferB\xf8\x01\x92A\xa3\x01\x12z\n" +
 	"&Fast Campus Pay (Payment API Endpoint)\"K\n" +
-	"\x13Fast Campus Payment\x12\x1ehttps://github.com/titikterang\x1a\x14azwar.nrst@gmail.com2\x031.0*\x01\x012\x10application/json:\x10application/jsonZSgithub.com/titikterang/hexagonal-arch-boilerplate/lib/protos/public/payment;paymentb\x06proto3"
+	"\x13Fast Campus Payment\x12\x1ehttps://github.com/titikterang\x1a\x14azwar.nrst@gmail.com2\x031.0*\x01\x012\x10application/json:\x10application/jsonZOgithub.com/hasri20/hexagonal-arch-boilerplate/lib/protos/public/payment;paymentb\x06proto3"
 
 var (
 	file_lib_protos_v1_payment_payment_proto_rawDescOnce sync.Once

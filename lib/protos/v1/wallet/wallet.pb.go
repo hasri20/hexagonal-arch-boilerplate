@@ -256,9 +256,9 @@ const file_lib_protos_v1_wallet_wallet_proto_rawDesc = "" +
 	"\x11UpdateUserBalance\x121.fastcampus.wallet.public.v1.UpdateBalanceRequest\x1a2.fastcampus.wallet.public.v1.UpdateBalanceResponse\"c\x92AD\n" +
 	"\abalance\x12\x19Update Users Balance Info*\x11UpdateUserBalanceJ\v\n" +
 	"\x03200\x12\x04\n" +
-	"\x02OK\x82\xd3\xe4\x93\x02\x16:\x01*\"\x11/v1/wallet/updateB\xf9\x01\x92A\xa2\x01\x12y\n" +
+	"\x02OK\x82\xd3\xe4\x93\x02\x16:\x01*\"\x11/v1/wallet/updateB\xf5\x01\x92A\xa2\x01\x12y\n" +
 	"%Fast Campus Pay (Wallet API Endpoint)\"K\n" +
-	"\x13Fast Campus Payment\x12\x1ehttps://github.com/titikterang\x1a\x14azwar.nrst@gmail.com2\x031.0*\x01\x012\x10application/json:\x10application/jsonZQgithub.com/titikterang/hexagonal-arch-boilerplate/lib/protos/public/wallet;walletb\x06proto3"
+	"\x13Fast Campus Payment\x12\x1ehttps://github.com/titikterang\x1a\x14azwar.nrst@gmail.com2\x031.0*\x01\x012\x10application/json:\x10application/jsonZMgithub.com/hasri20/hexagonal-arch-boilerplate/lib/protos/public/wallet;walletb\x06proto3"
 
 var (
 	file_lib_protos_v1_wallet_wallet_proto_rawDescOnce sync.Once
