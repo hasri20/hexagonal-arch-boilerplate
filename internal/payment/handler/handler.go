@@ -7,8 +7,8 @@ import (
 	"github.com/hasri20/hexagonal-arch-boilerplate/lib/protos/v1/payment"
 )
 
-func (h *Handler) TransferBalanceService(ctx context.Context, in *payment.TransferBalanceRequest) (*payment.TransferBalanceResponse, error) {
-	amount, err := h.paymentService.TransferUserBalance(ctx, models.TransferBalancePayload{
+func (handler *Handler) TransferBalanceService(ctx context.Context, in *payment.TransferBalanceRequest) (*payment.TransferBalanceResponse, error) {
+	amount, err := handler.paymentService.TransferUserBalance(ctx, models.TransferBalancePayload{
 		SourceUserID: in.GetSourceUserId(),
 		TargetUserID: in.GetDestination(),
 		Amount:       in.GetAmount(),

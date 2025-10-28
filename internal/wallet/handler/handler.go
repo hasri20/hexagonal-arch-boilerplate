@@ -7,8 +7,8 @@ import (
 	"github.com/hasri20/hexagonal-arch-boilerplate/lib/protos/v1/wallet"
 )
 
-func (h *Handler) GetUserBalance(ctx context.Context, in *wallet.GetBalanceRequest) (*wallet.GetBalanceResponse, error) {
-	resp, err := h.walletService.GetUserBalance(ctx, in.GetUserId())
+func (handler *Handler) GetUserBalance(ctx context.Context, in *wallet.GetBalanceRequest) (*wallet.GetBalanceResponse, error) {
+	resp, err := handler.walletService.GetUserBalance(ctx, in.GetUserId())
 	if err != nil {
 		/// log err
 		return nil, err
@@ -21,9 +21,9 @@ func (h *Handler) GetUserBalance(ctx context.Context, in *wallet.GetBalanceReque
 	return data, nil
 }
 
-func (h *Handler) UpdateUserBalance(ctx context.Context, in *wallet.UpdateBalanceRequest) (*wallet.UpdateBalanceResponse, error) {
+func (handler *Handler) UpdateUserBalance(ctx context.Context, in *wallet.UpdateBalanceRequest) (*wallet.UpdateBalanceResponse, error) {
 	var message = "success"
-	amount, err := h.walletService.UpdateUserBalance(ctx, models.UpdateBalancePayload{
+	amount, err := handler.walletService.UpdateUserBalance(ctx, models.UpdateBalancePayload{
 		UserID: in.GetUserId(),
 		Amount: in.GetAmount(),
 	})

@@ -8,14 +8,14 @@ import (
 	"github.com/hasri20/hexagonal-arch-boilerplate/internal/wallet/models"
 )
 
-func (s *WalletRepository) ReadBalanceInfoFromDatastore(ctx context.Context, userID string) (models.DatastoreBalanceResponse, error) {
+func (repository *WalletRepository) ReadBalanceInfoFromDatastore(ctx context.Context, userID string) (models.DatastoreBalanceResponse, error) {
 	// hgetall from redis
 	var respData = models.DatastoreBalanceResponse{
 		List: make([]string, 0),
 	}
 	rdsKey := "user:balance:" + userID
 	log.Infof("redis key : %s", rdsKey)
-	resp, err := s.client.HGetAll(ctx, rdsKey).Result()
+	resp, err := repository.client.HGetAll(ctx, rdsKey).Result()
 	if err != nil {
 		return models.DatastoreBalanceResponse{}, err
 	}
@@ -26,9 +26,9 @@ func (s *WalletRepository) ReadBalanceInfoFromDatastore(ctx context.Context, use
 	return respData, nil
 }
 
-func (s *WalletRepository) AppendBalanceInfoIntoDatastore(ctx context.Context, userID string, amount float64) error {
+func (repository *WalletRepository) AppendBalanceInfoIntoDatastore(ctx context.Context, userID string, amount float64) error {
 	rdsKey := "user:balance:" + userID
 	rdsHash := time.Now().UnixMilli()
-	_, err := s.client.HSet(ctx, rdsKey, rdsHash, amount).Result()
+	_, err := repository.client.HSet(ctx, rdsKey, rdsHash, amount).Result()
 	return err
 }

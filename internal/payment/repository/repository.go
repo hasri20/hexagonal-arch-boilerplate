@@ -8,7 +8,6 @@ import (
 )
 
 func (repository *PaymentRepository) ReadBalanceInfoFromWallet(ctx context.Context, userID string) (float64, error) {
-
 	payload := wallet.GetBalanceRequest{
 		UserId: userID,
 	}
@@ -28,7 +27,6 @@ func (repository *PaymentRepository) AppendBalanceInfoIntoWallet(ctx context.Con
 	}
 
 	_, err := repository.Client.UpdateUserBalance(ctx, &payload)
-
 	if err != nil {
 		log.Fatal(err)
 	}

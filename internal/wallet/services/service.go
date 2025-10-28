@@ -9,8 +9,8 @@ import (
 )
 
 // GetUserBalance - primary adapter
-func (s *WalletService) GetUserBalance(ctx context.Context, userID string) (models.BalanceResponse, error) {
-	resp, err := s.repository.ReadBalanceInfoFromDatastore(ctx, userID)
+func (service *WalletService) GetUserBalance(ctx context.Context, userID string) (models.BalanceResponse, error) {
+	resp, err := service.repository.ReadBalanceInfoFromDatastore(ctx, userID)
 	if err != nil {
 		return models.BalanceResponse{}, err
 	}
@@ -28,14 +28,14 @@ func (s *WalletService) GetUserBalance(ctx context.Context, userID string) (mode
 }
 
 // UpdateUserBalance - primary adapter
-func (s *WalletService) UpdateUserBalance(ctx context.Context, payload models.UpdateBalancePayload) (float64, error) {
+func (service *WalletService) UpdateUserBalance(ctx context.Context, payload models.UpdateBalancePayload) (float64, error) {
 	// append balance
-	err := s.repository.AppendBalanceInfoIntoDatastore(ctx, payload.UserID, payload.Amount)
+	err := service.repository.AppendBalanceInfoIntoDatastore(ctx, payload.UserID, payload.Amount)
 	if err != nil {
 		log.Error("failed to update balance")
 	}
 	// fetch latest balance
-	resp, err := s.GetUserBalance(ctx, payload.UserID)
+	resp, err := service.GetUserBalance(ctx, payload.UserID)
 	if err != nil {
 		log.Error("failed to get latest balance")
 	}
