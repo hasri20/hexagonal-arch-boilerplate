@@ -3,9 +3,10 @@ package config
 import "time"
 
 type Config struct {
-	App   AppConfig   `json:"app" mapstructure:"app"`
-	Http  HttpConfig  `json:"http" mapstructure:"http"`
-	Redis RedisConfig `json:"redis" mapstructure:"redis"`
+	App           AppConfig     `json:"app" mapstructure:"app"`
+	Http          HttpConfig    `json:"http" mapstructure:"http"`
+	Redis         RedisConfig   `json:"redis" mapstructure:"redis"`
+	PostgreConfig PostgreConfig `json:"postgre" mapstructure:"postgre"`
 }
 
 type AppConfig struct {
@@ -21,4 +22,13 @@ type HttpConfig struct {
 type RedisConfig struct {
 	Address  string `json:"address" mapstructure:"address"`
 	PoolSize int    `json:"poolsize" mapstructure:"poolsize"`
+}
+
+type PostgreConfig struct {
+	Address  string `json:"address" mapstructure:"address"`
+	Port     string `json:"port" mapstructure:"port"`
+	Username string `json:"username" mapstructure:"username"`
+	Password string `json:"password" mapstructure:"password"`
+	DBName   string `json:"dbName" mapstructure:"dbName"`
+	SSLMode  string `json:"sslMode" mapstructure:"sslMode"`
 }
