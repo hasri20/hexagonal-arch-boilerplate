@@ -4,9 +4,9 @@ import (
 	"log"
 
 	"github.com/go-redis/redis/v8"
+	"github.com/hasri20/hexagonal-arch-boilerplate/internal/membership/ent"
 	"github.com/hasri20/hexagonal-arch-boilerplate/internal/membership/handler"
 	"github.com/hasri20/hexagonal-arch-boilerplate/internal/membership/repository"
-	"github.com/hasri20/hexagonal-arch-boilerplate/internal/membership/schema/ent"
 	"github.com/hasri20/hexagonal-arch-boilerplate/internal/membership/services"
 	"github.com/hasri20/hexagonal-arch-boilerplate/lib/config"
 	"github.com/hasri20/hexagonal-arch-boilerplate/lib/datastore/postgre"

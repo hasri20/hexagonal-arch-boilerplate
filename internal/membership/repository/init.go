@@ -2,8 +2,8 @@ package repository
 
 import (
 	"github.com/go-redis/redis/v8"
+	"github.com/hasri20/hexagonal-arch-boilerplate/internal/membership/ent"
 	"github.com/hasri20/hexagonal-arch-boilerplate/internal/membership/ports"
-	"github.com/hasri20/hexagonal-arch-boilerplate/internal/membership/schema/ent"
 	"github.com/hasri20/hexagonal-arch-boilerplate/lib/config"
 )
 

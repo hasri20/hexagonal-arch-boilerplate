@@ -5,7 +5,6 @@ import (
 
 	"entgo.io/ent"
 	"entgo.io/ent/schema/field"
-	"entgo.io/ent/schema/index"
 )
 
 // User_Profile holds the schema definition for the User_Profile entity.
@@ -30,14 +29,4 @@ func (User_Profile) Fields() []ent.Field {
 // Edges of the User_Profile.
 func (User_Profile) Edges() []ent.Edge {
 	return nil
-}
-
-func (User_Profile) Indexes() []ent.Index {
-	return []ent.Index{
-		// non-unique index.
-		index.Fields("status"),
-		// unique index.
-		index.Fields("account_number").
-			Unique(),
-	}
 }

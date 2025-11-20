@@ -3,8 +3,8 @@ package repository
 import (
 	"context"
 
+	user "github.com/hasri20/hexagonal-arch-boilerplate/internal/membership/ent/user_profile"
 	"github.com/hasri20/hexagonal-arch-boilerplate/internal/membership/models"
-	user "github.com/hasri20/hexagonal-arch-boilerplate/internal/membership/schema/ent/user_profile"
 )
 
 func (repository DatastoreRepository) GetUserSessionFromCache(ctx context.Context) {

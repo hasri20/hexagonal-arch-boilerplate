@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/hasri20/hexagonal-arch-boilerplate/internal/membership/schema/ent"
+	"github.com/hasri20/hexagonal-arch-boilerplate/internal/membership/ent"
 	"github.com/hasri20/hexagonal-arch-boilerplate/lib/config"
 	_ "github.com/lib/pq"
 )
