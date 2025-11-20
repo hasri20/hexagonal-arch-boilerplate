@@ -1,0 +1,22 @@
+{
+  "app": {
+    "grpc_address": "0.0.0.0:3002",
+    "http_address": "0.0.0.0:8002",
+    "label": "membership"
+  },
+  "http": {
+    "timeout": "2s"
+  },
+  "redis": {
+    "address": "0.0.0.0:6379",
+    "poolsize": 100
+  },
+  "postgre": {
+    "address": "0.0.0.0",
+    "port": "6379",
+    "username": "admin",
+    "password": "postgre",
+    "dbName": "membership",
+    "sslMode": "disable"
+  }
+}
