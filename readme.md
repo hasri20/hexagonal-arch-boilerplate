@@ -46,7 +46,12 @@
    ```shell
    go generate ./internal/membership/ent
    ```
-10. Untuk migration, contoh commandnya sebagai berikut
+11. Untuk generate migration, contoh commandnya sebagai berikut
    ```shell
    atlas migrate diff migration_name --dir "file://internal/membership/ent/migrate/migrations" --to "ent://internal/membership/ent/schema" --dev-url "postgres://postgres:postgres@172.28.35.4:5432/postgres?search_path=public&sslmode=disable"
+   ```
+
+12. Untuk apply migration, contoh commandnya sebagai berikut
+   ```shell
+   atlas migrate apply --dir "file://internal/membership/ent/migrate/migrations" --url "postgres://postgres:postgres@172.28.35.4:5432/postgres?search_path=public&sslmode=disable"
    ```
