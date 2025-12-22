@@ -3,25 +3,24 @@ package repository
 import (
 	"context"
 
-	user "github.com/hasri20/hexagonal-arch-boilerplate/internal/membership/ent/user_profile"
+	"github.com/hasri20/hexagonal-arch-boilerplate/internal/membership/ent/user_profile"
 	"github.com/hasri20/hexagonal-arch-boilerplate/internal/membership/models"
 )
 
-func (repository DatastoreRepository) GetUserSessionFromCache(ctx context.Context) {
+func (repository *DatastoreRepository) GetUserSessionFromCache(ctx context.Context) {
 
 }
 
-func (repository DatastoreRepository) UpdateUserSessionIntoCache(ctx context.Context) {
+func (repository *DatastoreRepository) UpdateUserSessionIntoCache(ctx context.Context) {
 
 }
 
-func (repository DatastoreRepository) InsertUserInfoIntoDB(ctx context.Context) {
+func (repository *DatastoreRepository) InsertUserInfoIntoDB(ctx context.Context) {
 
 }
 
-func (repository DatastoreRepository) GetUserInfoFromDB(ctx context.Context, accountNumber string) (models.UserProfileInfo, error) {
-	user, err := repository.db.User_Profile.Query().Where(user.AccountNumber(accountNumber)).Only(ctx)
-
+func (repository *DatastoreRepository) GetUserInfoFromDB(ctx context.Context, accountNumber string) (models.UserProfileInfo, error) {
+	user, err := repository.db.User_Profile.Query().Where(user_profile.AccountNumber(accountNumber)).Only(ctx)
 	if err != nil {
 		return models.UserProfileInfo{}, err
 	}
@@ -36,8 +35,8 @@ func (repository DatastoreRepository) GetUserInfoFromDB(ctx context.Context, acc
 
 }
 
-func (repository DatastoreRepository) GetUserByUsername(ctx context.Context, fullname string) (models.UserProfileInfo, error) {
-	user, err := repository.db.User_Profile.Query().Where(user.Fullname(fullname)).Only(ctx)
+func (repository *DatastoreRepository) GetUserByUsername(ctx context.Context, fullname string) (models.UserProfileInfo, error) {
+	user, err := repository.db.User_Profile.Query().Where(user_profile.Fullname(fullname)).Only(ctx)
 
 	if err != nil {
 		return models.UserProfileInfo{}, err

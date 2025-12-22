@@ -1,9 +1,7 @@
 package postgre
 
 import (
-	"context"
 	"fmt"
-	"log"
 
 	"github.com/hasri20/hexagonal-arch-boilerplate/internal/membership/ent"
 	"github.com/hasri20/hexagonal-arch-boilerplate/lib/config"
@@ -35,12 +33,6 @@ func (db *Database) InitConnection() (*ent.Client, error) {
 
 	if err != nil {
 		return nil, err
-	}
-
-	defer conn.Close()
-
-	if err := conn.Schema.Create(context.Background()); err != nil {
-		log.Fatalf("failed creating schema resources: %v", err)
 	}
 
 	return conn, nil
