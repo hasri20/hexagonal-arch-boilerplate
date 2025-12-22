@@ -12,11 +12,11 @@
     "poolsize": 100
   },
   "postgre": {
-    "address": "0.0.0.0",
-    "port": "6379",
-    "username": "admin",
-    "password": "postgre",
-    "dbName": "membership",
+    "address": "172.28.35.4",
+    "port": "5432",
+    "username": "postgres",
+    "password": "postgres",
+    "dbName": "postgres",
     "sslMode": "disable"
   }
 }
