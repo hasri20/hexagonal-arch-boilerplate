@@ -55,3 +55,13 @@
    ```shell
    atlas migrate apply --dir "file://internal/membership/ent/migrate/migrations" --url "postgres://postgres:postgres@172.28.35.4:5432/postgres?search_path=public&sslmode=disable"
    ```
+
+13. Untuk remove migration, contoh commandnya sebagai berikut
+   ```shell
+   atlas migrate rm --dir "file://internal/membership/ent/migrate/migrations" --url "postgres://postgres:postgres@172.28.35.4:5432/postgres?search_path=public&sslmode=disable"
+   ```
+
+14. Untuk running go application, contoh commandnya sebagai berikut
+   ```shell
+   go run ./cmd/membership/
+   ```
